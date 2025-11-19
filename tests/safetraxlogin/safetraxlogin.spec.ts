@@ -6,7 +6,7 @@ test.beforeEach(async({page})=>{
     loginpage = new login(page);
     loginpage.open();
 })
-test("verify safetraxhome", async({page})=>{
+test("verify the safetraxhome", async({page})=>{
   await loginpage.verifylogo();
   await loginpage.verifyhelpbutton();
   await loginpage.verifycopyingphone();
