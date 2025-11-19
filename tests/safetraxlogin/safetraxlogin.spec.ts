@@ -16,4 +16,4 @@ test("verify the safetraxhome", async({page})=>{
   //await page.waitForLoadState('networkidle');  // defaults to "load"
 })
 })
-
+oinpimoinmoinm
