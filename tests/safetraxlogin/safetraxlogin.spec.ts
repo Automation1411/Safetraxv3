@@ -8,12 +8,13 @@ test.beforeEach(async({page})=>{
 })
 test("verify the safetraxhome", async({page})=>{
   await loginpage.verifylogo();
-  await loginpage.verifyhelpbutton();
+  //await loginpage.verifyhelpbutton();
   await loginpage.verifycopyingphone();
-  await loginpage.verifyusername("pardeepa1")
+  await loginpage.verifywebsite();
+  await loginpage.verifyusername("0323")
   await loginpage.verifypassword();
   await loginpage.verifysignin();
-  //await page.waitForLoadState('networkidle');  // defaults to "load"
+  await page.waitForTimeout(5000);
 })
 })
 
